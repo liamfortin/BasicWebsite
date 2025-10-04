@@ -1,9 +1,72 @@
 img {
-    border-radius:12px;
+  transition: all 0.2s;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  opacity: 0.9;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #000000;
 }
+
 img:hover {
-    opacity: 0.9;
-    scale:1.2;
-    filter: sepia(0.4);
-    border-radius:16px;
+	scale: 0.9;
+	opacity: 1;
+	border-style: solid;
+	border-color: #000000;
+	border-radius: 60px;
+	filter: sepia(3%);
+	
+}
+
+.rotatingImg {
+  animation: 4s ease-in-out infinite alternate rotatingImg;
+}
+.oppositeRotatingImg {
+  animation: 4s ease-in-out infinite alternate oppositeRotatingImg;
+}
+
+@keyframes rotatingImg {
+  from {
+    transform: rotateZ(3deg);
+  }
+  to {
+    transform: rotateZ(-3deg);
+  }
+}
+@keyframes oppositeRotatingImg {
+  from {
+    transform: rotateZ(-3deg);
+  }
+  to {
+    transform: rotateZ(3deg);
+  }
+}
+
+ul {
+  list-style-type: none;
+}
+
+.navbar {
+  bottom: 80%;
+  position: fixed;
+  float: left;
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  width: 200px;
+  background-color: #f1f1f1;
+  
+}
+
+.navbar li a {
+  display: block;
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.navbar li a:hover {
+  background-color: #555555;
+  color: white;
 }
