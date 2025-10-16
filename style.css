@@ -1,3 +1,8 @@
+body {
+  background-color: #204060;
+  color: #FFFFFF;
+}
+
 img {
   transition: all 0.2s;
   border-radius: 30px;
